@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>402</width>
+    <height>296</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>mainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableWidget" name="tableEntry">
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Format</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Team</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Titre</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>402</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionV_rifier"/>
+    <addaction name="actionR_sultats"/>
+    <addaction name="actionMini"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Edition</string>
+    </property>
+    <addaction name="actionAjouter_une_entr_e"/>
+    <addaction name="actionEditer_l_entr_e"/>
+    <addaction name="actionSupprimer_l_entr_e"/>
+    <addaction name="actionPreferences"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEdition"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAjouter_une_entr_e">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/add</normaloff>:/rc/add</iconset>
+   </property>
+   <property name="text">
+    <string>Ajouter une entrée</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_l_entr_e">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/delete</normaloff>:/rc/delete</iconset>
+   </property>
+   <property name="text">
+    <string>Supprimer l'entrée</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionEditer_l_entr_e">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/edit</normaloff>:/rc/edit</iconset>
+   </property>
+   <property name="text">
+    <string>Editer l'entrée</string>
+   </property>
+  </action>
+  <action name="actionV_rifier">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/check</normaloff>:/rc/check</iconset>
+   </property>
+   <property name="text">
+    <string>Vérifier</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionMini">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/mini</normaloff>:/rc/mini</iconset>
+   </property>
+   <property name="text">
+    <string>Mini</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/quit</normaloff>:/rc/quit</iconset>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionR_sultats">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/result</normaloff>:/rc/result</iconset>
+   </property>
+   <property name="text">
+    <string>Résultats</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="icon">
+    <iconset resource="rc.qrc">
+     <normaloff>:/rc/pref</normaloff>:/rc/pref</iconset>
+   </property>
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
